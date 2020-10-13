@@ -64,10 +64,14 @@ a.btn{
     width:150px;
     padding: 10px;
     border-radius:20px;
+    position: relative;
+    top:50px; 
+
 }
 a.btn-first{
     background-color: red;
     color:#fff;
+   
 }
 a.btn-second{
     background:transparent;
