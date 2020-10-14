@@ -17,9 +17,8 @@
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
           <div class="navbar-header">
-                <a href=""><img id="logo" src="images/logo.png"  onclick="change();"></a>  
-              <!-- <img onmouseover="logImg(this)" onmouseout="logoImg(this)" border="0" src="images/logo.png" alt="" width="40" height="20">
-      -->
+                <a href=""><img id="logo" src="images/logo.png" ></a>  
+              
            </div>
            <!-- nav bars -->
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -577,30 +576,10 @@
 }
             
 
-function logImg(x) {
-  x.style.height = "60px";
-  x.style.width = "80px";
-}
-
-function logoImg(x) {
-  x.style.height = "40px";
-  x.style.width = "60px";
-}
-
- var image_tracker ="logo";
-function change(){
-   var image = document.getElementById("logo");
-   if(image_tracker=="logo"){
-     image.src = "images/logo2.png";
-     image_tracker = "logo2";
-
-   }else(
-     image.src = "logo.png" );
-     image_tracker = "logo";
 
 
    
-}
+
 
         </script>
       </body>
