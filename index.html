@@ -108,22 +108,22 @@
           <div class="row"> 
            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
              <a href="#" class="d-block mb-4 h-100">
-                <img class="img-fluid img-thumbnail" src="images/image6jpg.jpg" alt="">
+                <img class="img-fluid img-thumbnail" src="file:///C:/Users/student/Documents/table/images/image6jpg.jpg" alt="" id="imgClick" onclick="imageChange()">
              </a>
             </div>
           <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
             <a href="#" class="d-block mb-4 h-100">
-               <img class="img-fluid img-thumbnail" src="images/food4.jpg" alt="">
+               <img class="img-fluid img-thumbnail" src="file:///C:/Users/student/Documents/table/images/food4.jpg" alt="" id="imgClickAndChange" onclick="changeImage()">
               </a>
               </div>
               <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" >
                 <a href="#" class="d-block mb-4 h-100">
-                      <img class="img-fluid img-thumbnail" src="images/food3.jpg" alt="">
+                      <img class="img-fluid img-thumbnail" src="file:///C:/Users/student/Documents/table/images/food3.jpg" alt="" id="ClickAndChange" onclick="changeClick()">
                     </a>
               </div>
               <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
                 <a href="#" class="d-block mb-4 h-100">
-                      <img class="img-fluid img-thumbnail" src="images/food6.jpg" alt="">
+                      <img class="img-fluid img-thumbnail" src="file:///C:/Users/student/Documents/table/images/food6.jpg" alt="" id="ChangeAndClick" onclick="clickChange()">
                     </a>
                 </div>
           </div> 
@@ -338,6 +338,51 @@
      </div>
 
     
+<script language="javascript">
+  function changeImage() {
+      if (document.getElementById("imgClickAndChange").src == "file:///C:/Users/student/Documents/table/images/food4.jpg") 
+      {
+          document.getElementById("imgClickAndChange").src = "file:///C:/Users/student/Documents/table/images/egg.jpg";
+      }
+      else 
+      {
+          document.getElementById("imgClickAndChange").src = "file:///C:/Users/student/Documents/table/images/food4.jpg";
+      }
+  }
+
+  function imageChange() {
+      if (document.getElementById("imgClick").src == "file:///C:/Users/student/Documents/table/images/image6jpg.jpg") 
+      {
+          document.getElementById("imgClick").src = "file:///C:/Users/student/Documents/table/images/chips.jpg";
+      }
+      else 
+      {
+          document.getElementById("imgClick").src = "file:///C:/Users/student/Documents/table/images/image6jpg.jpg";
+      }
+  }
+
+  function changeClick() {
+      if (document.getElementById("ClickAndChange").src == "file:///C:/Users/student/Documents/table/images/food3.jpg") 
+      {
+          document.getElementById("ClickAndChange").src = "file:///C:/Users/student/Documents/table/images/vege.jpg";
+      }
+      else 
+      {
+          document.getElementById("ClickAndChange").src = "file:///C:/Users/student/Documents/table/images/food3.jpg";
+      }
+  }
+
+  function clickChange() {
+      if (document.getElementById("ChangeAndClick").src == "file:///C:/Users/student/Documents/table/images/food6.jpg") 
+      {
+          document.getElementById("ChangeAndClick").src = "file:///C:/Users/student/Documents/table/images/omena.jpg";
+      }
+      else 
+      {
+          document.getElementById("ChangeAndClick").src = "file:///C:/Users/student/Documents/table/images/food6.jpg";
+      }
+  }
+</script>  
 <!-- start of modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalPoll-1" >
   Feedback</button>
