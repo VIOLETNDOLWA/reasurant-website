@@ -43,19 +43,22 @@ hr.light{
     margin-top:.8rem;
     margin-bottom:1rem;
 }
-footer{
-    padding-top: 2 rem;
+ footer{
+    padding-top: 3rem;
     background-color:#3f3f3f;
     color:#d5d5d5;
-    
+    position: relative; 
+    top:200px;
+
+}   
    
-}
+
 h5{
     font-size: 15px;
     text-align: center;
 }
-footer a{
-    columns: #d5d5d5;
+ footer a{
+    columns: #d5d5d5; 
 }
 hr.light-100{
     border-top:1px solid #d5d5d5;
@@ -129,3 +132,9 @@ a.btn:hover{
     font-weight: bold;
     
 }
+.form1{
+    max-width: 150px;
+    max-height: 100px;
+    padding-bottom: 30px;
+}
+

@@ -107,7 +107,7 @@
           <div class="row"> 
            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
              <a href="#" class="d-block mb-4 h-100">
-                <img class="img-fluid img-thumbnail" src="https:/C:/Users/student/Documents/table/index.html/images/image6jpg.jpg" alt="" id="imgClick" onclick="imageChange()">
+              <img class="img-fluid img-thumbnail" src="file:///C:/Users/student/Documents/table/images/image6jpg.jpg" alt="" id="imgClick" onclick="imageChange()">
              </a>
             </div>
           <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
@@ -117,12 +117,12 @@
               </div>
               <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" >
                 <a href="#" class="d-block mb-4 h-100">
-                      <img class="img-fluid img-thumbnail" src="file:///C:/Users/student/Documents/table/images/food3.jpg" alt="" id="ClickAndChange" onclick="changeClick()">
+                 <img class="img-fluid img-thumbnail" src="file:///C:/Users/student/Documents/table/images/food3.jpg" alt="" id="ClickAndChange" onclick="changeClick()">
                     </a>
               </div>
               <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
                 <a href="#" class="d-block mb-4 h-100">
-                      <img class="img-fluid img-thumbnail" src="file:///C:/Users/student/Documents/table/images/food6.jpg" alt="" id="ChangeAndClick" onclick="clickChange()">
+                  <img class="img-fluid img-thumbnail" src="file:///C:/Users/student/Documents/table/images/food6.jpg" alt="" id="ChangeAndClick" onclick="clickChange()">
                     </a>
                 </div>
           </div> 
@@ -335,54 +335,36 @@
          </table>
         </div>
      </div>
+<!-- start of a form -->
 
-    
-<script language="javascript">
-  function changeImage() {
-      if (document.getElementById("imgClickAndChange").src == "https:/C:/Users/student/Documents/table/index.html/images/food4.jpg") 
-      {
-          document.getElementById("imgClickAndChange").src = "https:/C:/Users/student/Documents/table/index.html/images/egg.jpg";
-      }
-      else 
-      {
-          document.getElementById("imgClickAndChange").src = "https:/C:/Users/student/Documents/table/index.html/images/food4.jpg";
-      }
-  }
+<h6>Field marked with * are required to be field</h6>
 
-  function imageChange() {
-      if (document.getElementById("imgClick").src == "file:///C:/Users/student/Documents/table/images/image6jpg.jpg") 
-      {
-          document.getElementById("imgClick").src = "file:///C:/Users/student/Documents/table/images/chips.jpg";
-      }
-      else 
-      {
-          document.getElementById("imgClick").src = "file:///C:/Users/student/Documents/table/images/image6jpg.jpg";
-      }
-  }
+<div class="form1">
+<form action="/action_page.php" onsubmit="myFunction()">
+  Name* <input type="text" name="name">
+  Email <input type="email" name="email">
+  Password <input type="password" name="password">
+  Phone* <input type="phone" name="phone">
+   Enquiry type*
+  <select id="mySelect" onchange="myFunction()">
+    <option value="Restaurant">Restaurant</option>
+    <option value="Accommodation">Accommodation</option>
+    <option value="Meetings">Meetings</option>
+    <option value="Food delivery">Food delivery</option>
+    <option value="Catering">Catering</option>
+    <option value="Event">Event</option>
+    <option value="Confrence">Confrence</option>
+  </select>
+  <hr>
+   <input type="submit" value="Submit">
+  
+</form>
+</div>
 
-  function changeClick() {
-      if (document.getElementById("ClickAndChange").src == "file:///C:/Users/student/Documents/table/images/food3.jpg") 
-      {
-          document.getElementById("ClickAndChange").src = "file:///C:/Users/student/Documents/table/images/vege.jpg";
-      }
-      else 
-      {
-          document.getElementById("ClickAndChange").src = "file:///C:/Users/student/Documents/table/images/food3.jpg";
-      }
-  }
-
-  function clickChange() {
-      if (document.getElementById("ChangeAndClick").src == "file:///C:/Users/student/Documents/table/images/food6.jpg") 
-      {
-          document.getElementById("ChangeAndClick").src = "file:///C:/Users/student/Documents/table/images/omena.jpg";
-      }
-      else 
-      {
-          document.getElementById("ChangeAndClick").src = "file:///C:/Users/student/Documents/table/images/food6.jpg";
-      }
-  }
-</script>  
+<!-- end of a form -->
+     
 <!-- start of modal -->
+ <!-- <div class="model">
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalPoll-1" >
   Feedback</button>
 
@@ -459,11 +441,13 @@
     </div>
   </div>
 </div>
+</div> --> 
 
 <!-- end of modal -->
 
 
- 
+      
+</div>
 
 <!-- Footer -->
 <footer class="page-footer font-small #ffff">
@@ -546,10 +530,7 @@
 </div>
 </div>
 </div>
-
-
-
-  </footer>
+</footer>
   <!-- end of footer -->
   
 
@@ -570,10 +551,64 @@
         $('#mydata').DataTable();
     } );
 
- function ourVision() {
+function ourVision() {
      alert("OUR VISION IS TO BE THE PREMIER BUSINESS HOTEL CHAIN IN THE REGION AND OUR MISSION IS TO OFFER  SUPERIO SERVICES LIKE ACCOMODATION AND USEFUL  EXPERIENCE TO OUR CLIENT")
                
 }
+
+function changeImage() {
+      if (document.getElementById("imgClickAndChange").src == "file:///C:/Users/student/Documents/table//images/food4.jpg") 
+      {
+          document.getElementById("imgClickAndChange").src = "file:///C:/Users/student/Documents/table//images/egg.jpg";
+      }
+      else 
+      {
+          document.getElementById("imgClickAndChange").src = "file:///C:/Users/student/Documents/table//images/food4.jpg";
+      }
+  }
+
+function imageChange() {
+      if (document.getElementById("imgClick").src == "file:///C:/Users/student/Documents/table/images/image6jpg.jpg") 
+      {
+          document.getElementById("imgClick").src = "file:///C:/Users/student/Documents/table/images/chips.jpg";
+      }
+      else 
+      {
+          document.getElementById("imgClick").src = "file:///C:/Users/student/Documents/table/images/image6jpg.jpg";
+      }
+  }
+
+function changeClick() {
+      if (document.getElementById("ClickAndChange").src == "file:///C:/Users/student/Documents/table/images/food3.jpg") 
+      {
+          document.getElementById("ClickAndChange").src = "file:///C:/Users/student/Documents/table/images/vege.jpg";
+      }
+      else 
+      {
+          document.getElementById("ClickAndChange").src = "file:///C:/Users/student/Documents/table/images/food3.jpg";
+      }
+  }
+
+  function clickChange() {
+      if (document.getElementById("ChangeAndClick").src == "file:///C:/Users/student/Documents/table/images/food6.jpg") 
+      {
+          document.getElementById("ChangeAndClick").src = "file:///C:/Users/student/Documents/table/images/omena.jpg";
+      }
+      else 
+      {
+          document.getElementById("ChangeAndClick").src = "file:///C:/Users/student/Documents/table/images/food6.jpg";
+      }
+  }
+
+   function myFunction() {
+  alert("Your form has been successfully submitted.");
+}
+const myFunction = document.getElementById("myFunction")
+function myFunction() {
+  var x = document.getElementById("mySelect").value;
+  document.getElementById("demo").innerHTML = "You selected: " + x;
+}
+
             
 
 
