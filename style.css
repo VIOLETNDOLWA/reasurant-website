@@ -48,8 +48,8 @@ hr.light{
     background-color:#3f3f3f;
     color:#d5d5d5;
     position: relative; 
-    top:200px;
-
+    top:250px;
+    margin: 10px;
 }   
    
 
@@ -132,9 +132,14 @@ a.btn:hover{
     font-weight: bold;
     
 }
+h6{
+    margin: 10px;
+}
 .form1{
     max-width: 150px;
     max-height: 100px;
     padding-bottom: 30px;
+    margin: 10px;
 }
+
 

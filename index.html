@@ -126,11 +126,15 @@
                     </a>
                 </div>
           </div> 
+
+          <div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+           style="background-color:lightseagreen;width:120px;height:20px;padding:40px;">
+          MENU</div>
     
          
-          <div class="row-table" style="overflow-x:scroll;white-space:nowrap">
+          <!-- <div class="row-table" style="overflow-x:scroll;white-space:nowrap">
             <h3 class="text-primary">MENU</h3>
-         <div clas="row">
+         <div clas="row"> -->
            <!-- table start -->
         
         <table id="mydata" class="table table-striped table-bordered" style="width:100%">
@@ -445,10 +449,6 @@
 
 <!-- end of modal -->
 
-
-      
-</div>
-
 <!-- Footer -->
 <footer class="page-footer font-small #ffff">
 
@@ -556,6 +556,14 @@ function ourVision() {
                
 }
 
+function mOver(obj) {
+  obj.innerHTML = "THANK YOU"
+}
+
+function mOut(obj) {
+  obj.innerHTML = "MENU"
+}
+
 function changeImage() {
       if (document.getElementById("imgClickAndChange").src == "file:///C:/Users/student/Documents/table//images/food4.jpg") 
       {
@@ -603,12 +611,11 @@ function changeClick() {
    function myFunction() {
   alert("Your form has been successfully submitted.");
 }
-const myFunction = document.getElementById("myFunction")
+
 function myFunction() {
   var x = document.getElementById("mySelect").value;
   document.getElementById("demo").innerHTML = "You selected: " + x;
 }
-
             
 
 
