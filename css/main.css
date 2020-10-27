@@ -12,6 +12,7 @@ background:url(../images/hotel.jpg)center/cover fixed no-repeat;
 }
 .primary-color{
     color: #d3325f;
+    
 }
 .info h2{
     word-spacing: 0.5rem;
@@ -154,9 +155,45 @@ color: #242424;
     color:#242424;
     text-decoration: none;
     transition: all 2s ease;
+    font-size: 23px;
+}
+.nav-link:hover{
+    color:#d3325f;
+}
+.nav-btn{
+    background: transparent;
+    color:#d3325f;
+    border:2px solid #d3325f;
+    font-size: 23px;
+    transition: all 2s ease;
+}
+.nav-btn:hover{
+    color:#242424;
+    border: 2px solid #242424;
+    transform:rotate(10deg);
+}
+.toggler-btn{
+    border:2px solid #d3325f;
+    padding: 5px;
+    transition: all 2s ease;
+}
+.bar{
+  width: 30px;
+  height:3px;
+  margin:5px;
+  background: #d3325f;  
+  transition: all 0.5 ease;
+}
+.change .bar1{
+transform:rotate(-45deg) translate(-5px,6px);
 }
 
-
+.change .bar2{
+opacity: 0;
+}
+.change .bar3{
+transform:rotate(-45deg) translate(-5px,-8px);
+    }
 /*######################*/
 .item-container{
     position:relative;
