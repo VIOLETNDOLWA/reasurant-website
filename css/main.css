@@ -24,7 +24,7 @@ background:url(../images/hotel.jpg)center/cover fixed no-repeat;
 }
 /*#####header section#######*/
 .container{
-    background:linear-gradient(to right,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/download.jpg);
+    background:linear-gradient(to right,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/sushi2.jpeg);
     max-width: 100%;
     background-position: center;
     background-size: cover;
@@ -40,7 +40,7 @@ max-width: 100%;
 
 }
 h1{
-    font-size: 10px;
+    font-size: 20px;
     padding: 5px;
     position: relative;
     top:5px;
@@ -58,6 +58,11 @@ h1{
     animation-fill-mode: forwards;
    
 }
+h2{
+    font-size: 20px;
+   
+}
+
 .main-btn{
     color:#d3325f;
     font-size: 2rem;
@@ -169,7 +174,7 @@ color: #242424;
 }
 /*menu*/
 #menu{
-    background:linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)),url(../images/download.jpg)center/cover fixed no-repeat;
+    background:linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)),url(../images/sushi2.jpeg)center/cover fixed no-repeat;
     margin: 0px;
 }
 .special{
@@ -229,3 +234,74 @@ color: #242424;
 .about-pictures:hover .about-image:not(:hover){
 opacity: 0.5;
 }
+
+/* review */
+.review-item {
+background-color:rgba(255,255,255,0.7);
+clip-path: polygon(5% 0,100% 0,90% 100%,0 100%);
+}
+
+ .review-img{
+    width: 190px;
+}
+
+.team-icons a{
+color: #3b5998;
+transition: all 2s ease-in-out;
+
+} 
+
+.team-icons a:hover{
+    color:#242424;
+    transform:translateY(-5px);
+}
+/* contact */
+.height-60{
+    min-height: 58vh;
+}
+#contact .card{
+    background: rgba(0,0,0,0.5);
+    transition: all 2s ease;
+}
+#contact .card:hover{
+    background: rgba(0,0,0,0.8); 
+}
+#contact .card-header{
+    color: #d3325f;
+}
+#contact .input-group-text{
+    background: #d3325f;
+    border-color:  #d3325f;
+    color:#242424;
+}
+#contact .card input{
+    color:#606060;
+}
+#contact .card input::placeholder{
+    color:#606060;
+}
+.contact-btn{
+    color:#d3325f;
+    border-color: #d3325f;
+    background: transparent;
+    transition: all 2s ease-in-out;
+}
+.contact-btn:hover{
+    background: #c9c1ac;
+    color:#d3325f;
+    border-color: #c9c1ac;
+}
+/* footer */
+#back-to-top{
+    background: #c9c1ac;
+    border-radius: 8px;
+    display: inline-block;
+}
+.scrollTop{
+    position: fixed;
+    bottom: 70px;
+    right:10px;
+
+
+}
+
