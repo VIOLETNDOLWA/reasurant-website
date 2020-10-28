@@ -260,6 +260,25 @@ transform:rotate(-45deg) translate(-5px,-8px);
     width: 150px;
     transition: all 2s ease;
     opacity: 0.9;
+ }
+ 
+
+/* chef */
+.female{
+    max-width: 70%;
+    max-height:20%;
+    margin-left: 20px;
+}
+.male1{
+    max-width:70%;
+    max-height:10%;
+    margin-left: 10px;
+}
+.male2{
+    max-width:70%;
+    max-height:10% ;
+    margin-left: 20px;
+
 }
 .img-1{
     left: 0%;
