@@ -41,13 +41,12 @@ max-width: 100%;
 
 }
 h1{
-    font-size: 20px;
-    padding: 5px;
-    position: relative;
-    top:5px;
+    font-size: 10px;
     padding-top: 5px;
+    
 
 }
+
 .banner h1{
 
     border-top: 6px dotted whitesmoke;
